@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "ENGINE DIAGNOSTIC",
+         "price": "300",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/KXpgqcK/per-2.jpg"
+    },
+    {
+        "id": 2,
+        "name": "WHEEL ALIGNMENT",
+        "price": "100",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/hXwFNpK/per21.jpg"
+    },
+    {
+        "id": 3,
+        "name": "OIL CHANGING",
+        "price": "150",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/GdRRvsg/per-9.jpg"
+    },
+    {
+        "id": 4,
+        "name": "BRAKE REPARING",
+        "price": "180",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/0C19dyh/per17.webp"
+    },
+    {
+        "id": 5,
+        "name": "WASH AND GLASSING",
+        "price": "100",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/n7xLyvJ/lucas-mendes-Cyfm-Spq-NMD8-unsplash.jpg"
+    },
+    {
+        "id": 6,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/vjx8WXt/per18.webp"
+    },
+    {
+        "id": 7,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/CnvKxNn/per-11.jpg"
+    },
+    {
+        "id": 8,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/G5knCpD/per3.jpg"
+    },
+    {
+        "id": 9,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/4pn2VXP/per19.jpg"
+    },
+    {
+        "id": 10,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/K2sLPVR/per20.jpg"
+    },
+    {
+        "id": 11,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/pZynKRJ/per1.jpg"
+    },
+    {
+        "id": 12,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "qty":10,
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/sv2ncqh/per22.jpg"
+    }
+]

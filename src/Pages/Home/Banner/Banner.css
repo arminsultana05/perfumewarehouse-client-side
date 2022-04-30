@@ -1,0 +1,12 @@
+.banner{
+    background: url(../../../images/banner1.png.jpg);
+    height: 500px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.margin{
+    margin-top: 120px;
+    margin-left: 100px;
+}

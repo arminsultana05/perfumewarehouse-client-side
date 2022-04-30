@@ -24,11 +24,11 @@ const Header = () => {
 
           <div className="nav-links mr-5 mt-2">
             <Link to='/'></Link>
-            <Link to='/'>Home</Link>
-            <Link to='/'>Manage Items</Link>
-            <Link to='/'>My Items</Link>
-            <Link to='/'>Blogs</Link>
-            <Link to='/'>Login</Link>
+            <Link to='/home'>Home</Link>
+            <Link to='/manage'>Manage Items</Link>
+            <Link to='/myitems'>My Items</Link>
+            <Link to='/blogs'>Blogs</Link>
+            <Link to='/login'>Login</Link>
             {/* <Link to ='/login'>Login</Link> */}
            
             

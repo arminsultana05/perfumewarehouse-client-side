@@ -6,12 +6,13 @@ import auth from '../../firebase.init';
 import GoogleLogin from '../Login/GoogleLogin/GoogleLogin';
 
 const SignUp = () => {
+
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification:true});
     const emailRef = useRef('')
     const passRef = useRef('')
     const confirmPassRef =useRef('')

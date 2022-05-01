@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import logo from '../../images/user3.png'
 import auth from '../../firebase.init';
+import GoogleLogin from '../Login/GoogleLogin/GoogleLogin';
 
 const SignUp = () => {
     const [
@@ -21,6 +22,7 @@ const SignUp = () => {
         const pass = passRef.current.value;
         const confirmPass=confirmPassRef.current.value;
         createUserWithEmailAndPassword(email,pass,confirmPass)
+       
 
     }
     const logInNavigate = event => {
@@ -41,9 +43,10 @@ const SignUp = () => {
                     <input ref={passRef} type="password" name="" placeholder="******" required />
                     <p>Confirm Password</p>
                     <input ref={passRef} type="password" name="" placeholder="******" required />
-                    <button className="btn btn-secondary bg-pink-500 px-28  rounded rounded-full">signup</button>
+                    <button className="btn btn-secondary bg-pink-500 w-full  rounded rounded-full">sign Up</button>
                     <br />
-                    <small className='text-white ml-2 text-base cursor-pointer '>Already have an account? <span onClick={logInNavigate} className='text-yellow-500 '>Login</span></small>
+                    <small className='text-white  text-base cursor-pointer mt-5 '>Already have an account? <span onClick={logInNavigate} className='text-yellow-500 '>Login</span></small>
+                    <GoogleLogin></GoogleLogin>
                 </form>
 
             </div>

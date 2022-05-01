@@ -11,7 +11,7 @@ const
         }
         return (
             <div>
-                <div className="card  bg-base-100 shadow-xl">
+                <div className="card flex flex-col justify-between bg-base-100 shadow-xl">
                     <figure className="px-10 w-50 pt-10">
                         <img src={img} alt="Shoes" className="rounded-xl" />
                     </figure>

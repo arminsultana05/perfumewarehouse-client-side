@@ -34,6 +34,8 @@ const Header = () => {
             <Link to='/home'>Home</Link>
             <Link to='/manage'>Manage Items</Link>
             <Link to='/myitems'>My Items</Link>
+            {/* <Link to='/additem'>Add Items</Link> */}
+
             <Link to='/blogs'>Blogs</Link>
             
            {  user?

@@ -11,6 +11,7 @@ import NotFound from '../src/Pages/NotFound/NotFound'
 import Blogs from './Pages/Blogs/Blogs';
 import ManageDetails from './Pages/Home/ManageDetails/ManageDetails';
 import useProduct from './CustonHooks/useProduct';
+import ProductDetail from './Pages/ProductDetail/ProductDetail';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route path ="/inventory/:inventoryId" element={<ProductDetail></ProductDetail>}></Route>
         <Route path="/manage" element={<ManageInventory></ManageInventory>}></Route>
         <Route path="/myitems" element={<MyItems></MyItems>}></Route>
         <Route path ='/blogs' element={<Blogs></Blogs>}></Route>

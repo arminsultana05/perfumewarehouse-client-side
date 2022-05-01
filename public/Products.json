@@ -1,15 +1,17 @@
 [
     {
         "id": 1,
-        "name": "ENGINE DIAGNOSTIC",
-         "price": "300",
+        "name": "Eau de Lubin",
+        "supplier":"Oriza L. Legrand",
+        "price": "300",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
         "img": "https://i.ibb.co/KXpgqcK/per-2.jpg"
     },
     {
         "id": 2,
-        "name": "WHEEL ALIGNMENT",
+        "name": "Farina Eau de Cologne",
+        "supplier":"Johann Maria Farina",
         "price": "100",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
@@ -17,7 +19,8 @@
     },
     {
         "id": 3,
-        "name": "OIL CHANGING",
+        "name": "Lavender",
+        "supplier":"Francis Truefitt",
         "price": "150",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
@@ -25,7 +28,8 @@
     },
     {
         "id": 4,
-        "name": "BRAKE REPARING",
+        "name": "Jockey Club",
+        "supplier":"Rowland R. Hazard ",
         "price": "180",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
@@ -33,7 +37,8 @@
     },
     {
         "id": 5,
-        "name": "WASH AND GLASSING",
+        "name": "Eau de Cologne",
+        "supplier":"Pierre-François-Pascal Guerlain",
         "price": "100",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
@@ -41,7 +46,8 @@
     },
     {
         "id": 6,
-        "name": "COMPLETE ANALYSIS",
+        "name": "Au Fil de l'Eau",
+        "supplier":"Louis Lenthéric",
         "price": "300",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
@@ -49,7 +55,8 @@
     },
     {
         "id": 7,
-        "name": "COMPLETE ANALYSIS",
+        "name": "Jicky",
+        "supplier":"Aimé Guerlain",
         "price": "300",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
@@ -57,15 +64,17 @@
     },
     {
         "id": 8,
-        "name": "COMPLETE ANALYSIS",
+        "name": "Ambre Antique",
+        "supplier":"François Coty",
         "price": "300",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/G5knCpD/per3.jpg"
+        "img": "https://i.ibb.co/LSXTLRm/per-22.jpg"
     },
     {
         "id": 9,
-        "name": "COMPLETE ANALYSIS",
+        "name": "Narcisse Noir",
+        "supplier":"Ernest Daltroff",
         "price": "300",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
@@ -73,23 +82,26 @@
     },
     {
         "id": 10,
-        "name": "COMPLETE ANALYSIS",
+        "name": "L'Heure Bleue",
+        "supplier":"Ernest Daltroff",
         "price": "300",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/K2sLPVR/per20.jpg"
+        "img": "https://i.ibb.co/MnYgBrt/images1.jpg"
     },
     {
         "id": 11,
-        "name": "COMPLETE ANALYSIS",
+        "name": "Quelques Fleurs",
+        "supplier":"Robert Bienaimé",
         "price": "300",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/pZynKRJ/per1.jpg"
+        "img": "https://i.ibb.co/84gQBgH/images2.jpg"
     },
     {
         "id": 12,
-        "name": "COMPLETE ANALYSIS",
+        "name": "Shalimar",
+        "supplier":"Jacques Guerlain",
         "price": "300",
         "qty":10,
         "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",

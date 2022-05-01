@@ -20,11 +20,14 @@ const SignUp = () => {
         const email = emailRef.current.value;
         const pass = passRef.current.value;
         const confirmPass=confirmPassRef.current.value;
-        console.log(email, pass);
+        createUserWithEmailAndPassword(email,pass,confirmPass)
 
     }
     const logInNavigate = event => {
         navigate('/login')
+    }
+    if(user){
+        navigate('/home')
     }
     return (
         <div className="form-container ">
@@ -38,7 +41,7 @@ const SignUp = () => {
                     <input ref={passRef} type="password" name="" placeholder="******" required />
                     <p>Confirm Password</p>
                     <input ref={passRef} type="password" name="" placeholder="******" required />
-                    <button className="btn btn-secondary bg-pink-500 px-28 rounded rounded-full">Login</button>
+                    <button className="btn btn-secondary bg-pink-500 px-28  rounded rounded-full">signup</button>
                     <br />
                     <small className='text-white ml-2 text-base cursor-pointer '>Already have an account? <span onClick={logInNavigate} className='text-yellow-500 '>Login</span></small>
                 </form>

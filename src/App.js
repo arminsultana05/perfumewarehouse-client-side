@@ -9,9 +9,8 @@ import MyItems from './Pages/MyItems/MyItems';
 import Login from '../src/Pages/Login/Login'
 import NotFound from '../src/Pages/NotFound/NotFound'
 import Blogs from './Pages/Blogs/Blogs';
-import ManageDetails from './Pages/Home/ManageDetails/ManageDetails';
-import useProduct from './CustonHooks/useProduct';
 import ProductDetail from './Pages/ProductDetail/ProductDetail';
+import SignUp from '../src/Pages/SignUp/SignUp';
 
 function App() {
 
@@ -27,6 +26,7 @@ function App() {
         <Route path="/myitems" element={<MyItems></MyItems>}></Route>
         <Route path ='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path='signup'element={<SignUp></SignUp>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
     
       </Routes>

@@ -5,6 +5,9 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import GoogleLogin from './GoogleLogin/GoogleLogin';
+import Loading from '../Shared/Loading/Loading';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -39,13 +42,15 @@ const Login = () => {
     }, [user]);
     const resetPassword = async()=>{
         const email =emailRef.current.value;
+         if(email){
         await sendPasswordResetEmail(email);
-  ;
-    if(email){
-        alert('Sent email')
+        toast('Sent email')
         
     }else{
-        alert('Enter email address')
+        toast('Enter email address')
+    }
+    if(loading || sending){
+        return <Loading></Loading>
     }
      
 
@@ -67,7 +72,8 @@ const Login = () => {
         </form>
         <small className='text-white ml-3 text-base cursor-pointer '>New to ware house? <span onClick={signUpNavigate} className='text-yellow-500 '>Sign Up</span></small> 
         <GoogleLogin></GoogleLogin>
-    </div>z``
+        <ToastContainer />
+    </div>
        </div>
  
    

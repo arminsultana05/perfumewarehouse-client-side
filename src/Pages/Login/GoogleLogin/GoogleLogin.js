@@ -3,12 +3,14 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import logo from '../../../images/google.png'
+import Loading from '../../Shared/Loading/Loading';
 
 const GoogleLogin = () => {
     const navigate = useNavigate()
     const location = useLocation()
     let from= location.state?.from?.pathname || "/   ";
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    
     useEffect(() => {
         if (user) {
             navigate(from);
@@ -17,6 +19,9 @@ const GoogleLogin = () => {
     if(user){
         navigate('/home')
 
+    }
+    if (loading){
+        return <Loading></Loading>
     }
     return (
         <div>

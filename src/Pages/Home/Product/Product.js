@@ -20,7 +20,7 @@ const
                         <p className=" ml-3">Supplier: {supplier}</p>
                         <p className=" ml-3">Price: ${price}</p>
                         <p className=" ml-3">Qty: {qty}</p>
-                        <p className=" ml-3">If a dog chews shoes whose shoes does he choose?</p>
+                        <p className=" ml-3">{description}</p>
                         <div className="card-actions ">
                             <button onClick={() => handleProductDetail(id)} class="btn btn-secondary bg-pink-500 ml-20 px-10">SHOP NOW</button>
                         </div>

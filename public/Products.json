@@ -5,7 +5,7 @@
         "supplier":"Oriza L. Legrand",
         "price": "300",
         "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Lubin, inventeur de parfums depuis plus de...",
         "img": "https://i.ibb.co/KXpgqcK/per-2.jpg"
     },
     {
@@ -13,8 +13,8 @@
         "name": "Farina Eau de Cologne",
         "supplier":"Johann Maria Farina",
         "price": "100",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "qty":11,
+        "description": "Farina's Eau de Cologne is a citrus aromatic scent... ",
         "img": "https://i.ibb.co/hXwFNpK/per21.jpg"
     },
     {
@@ -22,8 +22,8 @@
         "name": "Lavender",
         "supplier":"Francis Truefitt",
         "price": "150",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "qty":12,
+        "description": "Although lavender is a sedative-type aroma, use during...",
         "img": "https://i.ibb.co/GdRRvsg/per-9.jpg"
     },
     {
@@ -31,8 +31,8 @@
         "name": "Jockey Club",
         "supplier":"Rowland R. Hazard ",
         "price": "180",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "qty":13,
+        "description": "The Jockey Club was founded in 1750 by a group of people...",
         "img": "https://i.ibb.co/0C19dyh/per17.webp"
     },
     {
@@ -40,71 +40,71 @@
         "name": "Eau de Cologne",
         "supplier":"Pierre-François-Pascal Guerlain",
         "price": "100",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "qty":14,
+        "description": "Eau de Cologne, originally used for hygiene and cleansing,..",
         "img": "https://i.ibb.co/n7xLyvJ/lucas-mendes-Cyfm-Spq-NMD8-unsplash.jpg"
     },
     {
         "id": 6,
-        "name": "Au Fil de l'Eau",
+        "name": "The Enchanting Bouquet.",
         "supplier":"Louis Lenthéric",
         "price": "300",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "qty":15,
+        "description": "Turn an ordinary day into an enchanting daydream by!... ",
         "img": "https://i.ibb.co/vjx8WXt/per18.webp"
     },
     {
         "id": 7,
         "name": "Jicky",
         "supplier":"Aimé Guerlain",
-        "price": "300",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "price": "250",
+        "qty":16,
+        "description": "Jicky was launched in 1889. The nose behind this ...",
         "img": "https://i.ibb.co/CnvKxNn/per-11.jpg"
     },
     {
         "id": 8,
         "name": "Ambre Antique",
         "supplier":"François Coty",
-        "price": "300",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "price": "200",
+        "qty":17,
+        "description": "Ambre Antique is an oriental - amber fragrance that...",
         "img": "https://i.ibb.co/LSXTLRm/per-22.jpg"
     },
     {
         "id": 9,
         "name": "Narcisse Noir",
         "supplier":"Ernest Daltroff",
-        "price": "300",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "price": "400",
+        "qty":18,
+        "description": "This extreme fragrance uniquely combines the ...",
         "img": "https://i.ibb.co/4pn2VXP/per19.jpg"
     },
     {
         "id": 10,
         "name": "L'Heure Bleue",
         "supplier":"Ernest Daltroff",
-        "price": "300",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "price": "180",
+        "qty":19,
+        "description": "The fragrance is velvety soft and romantic,...",
         "img": "https://i.ibb.co/MnYgBrt/images1.jpg"
     },
     {
         "id": 11,
         "name": "Quelques Fleurs",
         "supplier":"Robert Bienaimé",
-        "price": "300",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "price": "310",
+        "qty":20,
+        "description": "Over time it becomes an uninhibited,...",
         "img": "https://i.ibb.co/84gQBgH/images2.jpg"
     },
     {
         "id": 12,
         "name": "Shalimar",
         "supplier":"Jacques Guerlain",
-        "price": "300",
-        "qty":10,
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "price": "120",
+        "qty":21,
+        "description": "Shalimar is a perfume originally created by .. ",
         "img": "https://i.ibb.co/sv2ncqh/per22.jpg"
     }
 ]

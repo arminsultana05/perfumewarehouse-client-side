@@ -5,6 +5,7 @@ import logo from '../../images/user3.png'
 import auth from '../../firebase.init';
 import GoogleLogin from '../Login/GoogleLogin/GoogleLogin';
 import { AiOutlineExclamationCircle } from "react-icons/ai";
+import Loading from '../Shared/Loading/Loading';
 
 const SignUp = () => {
     // const[email1, setEmail1]=useState('');
@@ -33,6 +34,9 @@ const SignUp = () => {
     }
     if(user){
         navigate('/home')
+    }
+    if(loading){
+        return <Loading></Loading>
     }
     return (
         <div className="form-container ">

@@ -11,7 +11,7 @@ const ManageInventory = () => {
           <div className='product-container'>
           {
                 products.map(product=> <ManageDetails
-                key={product.id}
+                key={product._id}
                 product={product}></ManageDetails>)
                 }
           </div>

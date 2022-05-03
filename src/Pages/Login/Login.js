@@ -1,20 +1,24 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Login.css'
 import logo from '../../images/user2.png'
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import GoogleLogin from './GoogleLogin/GoogleLogin';
 
 const Login = () => {
+
     const [
         signInWithEmailAndPassword,
         user,
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+      const [sendPasswordResetEmail, sending, updateError] = useSendPasswordResetEmail(
+        auth
+      );
       const location = useLocation()
-      let from= location.state?.from?.pathname || "/";
+      let from= location.state?.from?.pathname || "/   ";
     const emailRef = useRef('')
     const passRef = useRef('')
     const navigate = useNavigate()
@@ -28,8 +32,23 @@ const Login = () => {
     const signUpNavigate= event =>{
         navigate('/signup')
     }
-    if(user){
-        navigate(from, {replace: true});
+    useEffect(() => {
+        if (user) {
+            navigate(from);
+        }
+    }, [user]);
+    const resetPassword = async()=>{
+        const email =emailRef.current.value;
+        await sendPasswordResetEmail(email);
+  ;
+    if(email){
+        alert('Sent email')
+        
+    }else{
+        alert('Enter email address')
+    }
+     
+
     }
     return (
   
@@ -44,12 +63,11 @@ const Login = () => {
             <input ref={passRef} type="password" name="" placeholder="******" required/>
             <button className="btn btn-secondary bg-pink-500 w-full  rounded rounded-full">Log In</button>
             <br />
-           {/* <input type="submit" name="" value="Sign In"/> */}
-            <a className='ml-3 mt-2' href="#">Forget Password?</a>
+            <small className='text-white ml-3 text-base cursor-pointer mt-5 '>Forget Password? <span onClick={resetPassword} className='text-yellow-500 '>Reset </span></small> 
         </form>
         <small className='text-white ml-3 text-base cursor-pointer '>New to ware house? <span onClick={signUpNavigate} className='text-yellow-500 '>Sign Up</span></small> 
         <GoogleLogin></GoogleLogin>
-    </div>
+    </div>z``
        </div>
  
    

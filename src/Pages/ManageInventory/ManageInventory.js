@@ -21,7 +21,7 @@ const ManageInventory = () => {
           </div>
           <div className="flex mb-5">
         <button onClick={() => navigate("/additem")}  className="btn btn-secondary bg-pink-500 ml-20 px-10  ">ADD NEW ITEM</button>
-         <button  className="btn btn-secondary bg-pink-500 ml-20 px-10 ">DELETE ITEM</button>
+         <button onClick={()=>navigate("/deleteitem")}  className="btn btn-secondary bg-pink-500 ml-20 px-10 ">DELETE ITEM</button>
          </div>
 
 

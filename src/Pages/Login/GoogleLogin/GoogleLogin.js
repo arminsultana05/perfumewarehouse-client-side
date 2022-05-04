@@ -8,7 +8,7 @@ import Loading from '../../Shared/Loading/Loading';
 const GoogleLogin = () => {
     const navigate = useNavigate()
     const location = useLocation()
-    let from= location.state?.from?.pathname || "/   ";
+    let from= location.state?.from?.pathname || "/";
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     
     useEffect(() => {

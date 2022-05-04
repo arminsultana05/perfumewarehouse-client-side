@@ -12,6 +12,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import ProductDetail from './Pages/ProductDetail/ProductDetail';
 import SignUp from '../src/Pages/SignUp/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import AddProduct from './Pages/AddProduct/AddProduct';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <ProductDetail></ProductDetail>
         </RequireAuth>}></Route>
         <Route path="/manage" element={<ManageInventory></ManageInventory>}></Route>
+        <Route path="/additem" element={<AddProduct></AddProduct>}></Route>
         <Route path="/myitems" element={<MyItems></MyItems>}></Route>
         <Route path ='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>

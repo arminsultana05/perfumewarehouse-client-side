@@ -12,7 +12,7 @@ const ManageDetails = ({ product }) => {
 
   return (
     <div>
-      <div className="card  bg-base-100 shadow-xl">
+      <div className="card  bg-base-100 shadow-xl mb-5">
         <figure className="px-10 w-50 pt-10">
           <img src={img} alt="Shoes" className="rounded-xl" />
         </figure>
@@ -23,14 +23,14 @@ const ManageDetails = ({ product }) => {
           <p className=" ml-3">Qty: {qty}</p>
           <p className=" ml-3">{description}</p>
           <div className="card-actions ">
-            <button onClick={()=>handleManageDetail(_id)} className="btn btn-secondary bg-pink-500 ">SHOP NOW</button>
-            <button className="btn btn-secondary bg-pink-500 ">DELETE</button>
-          </div>
+            <button onClick={()=>handleManageDetail(_id)} className="btn btn-secondary bg-pink-500 ml-20 px-10 ">SHOP NOW</button>
+           </div>
         </div>
-      </div>
+        
+       </div>
+      
 
-
-    </div>
+</div>
   );
 };
 

@@ -13,11 +13,13 @@ const InventoryItem = () => {
             <h1>This is inventory items{products.length}</h1>
           <div className="product-container">
           {
-                  products.slice(0,6).map(product=> <Product key={product.id}
+                  products.slice(0,6).map(product=> <Product key={product._id}
                     product={product}>
     
-                    </Product>)         
+                    </Product>)  
+                           
                      }
+                     
           </div>
           <button onClick={() => navigate("/manage")} class="btn btn-secondary bg-pink-500 px-20 mt-5 ml-2">EXPLORE MORE</button>
         </div>

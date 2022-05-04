@@ -13,25 +13,57 @@ const ProductDetail = () => {
     }, [])
     const navigate = useNavigate()
     return (
-        <div className=''>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <figure className="px-10 pt-10">
-                    <img src={products.img} alt="Shoes" className="rounded-xl" />
-                </figure>
-                <div className="card-body items-left text-left">
-                    <p className=" ml-3">Name: {products.name}</p>
-                    <p className=" ml-3">Supplier: {products.supplier}</p>
-                    <p className=" ml-3">Price: ${products.price}</p>
-                    <p className=" ml-3">Qty: {products.qty}</p>
-                    <p className=" ml-3">{products.description}</p>
-                    <div className="card-actions">
-                        <button className="btn btn-primary">Delete Qty</button>
-                        <button className="btn btn-primary">Update Qty</button>
-                    </div>
-                </div>
+        <div className='inventory-items'>
+
+            <div class="table_responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>lD</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Supplier</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>{products._id}</td>
+                            <td><img src={products.img} alt="" /></td>
+                            <td>{products.name}</td>
+                            <td>{products.price}</td>
+                            <td>{products.qty}</td>
+                            <td>{products.supplier}</td>
+                            <td>
+                                <span class="action_btn">
+
+                                    <button className="btn btn-secondary bg-pink-500  ">Delivered</button>
+
+
+                                </span>
+                            </td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
             </div>
-            <div classNameName="">
-                <button onClick={() => navigate("/manage")} className="btn btn-secondary bg-pink-500 px-20 mt-5 ml-2">EXPLORE MORE</button>
+            <div className=" mx-auto w-1/3">
+                <h1 className='mt-5 ml-4 font-semibold'>RESTOCK THE ITEM</h1>
+                <form >
+                    <input className='border border-pink-600 mt-5 '  placeholder='Update 
+                    Quantity' type="number" name="" id="" />
+                    <br />
+                   <button className='btn btn-sm bg-pink-400 mt-2'>Increase qty</button>
+                </form>
+            </div>
+
+            <div>
+                <button onClick={() => navigate("/manage")} className="btn btn-secondary bg-pink-500 px-20 mt-5 ml-60 mb-5  mb-5 ">EXPLORE MORE</button>
             </div>
         </div>
     );

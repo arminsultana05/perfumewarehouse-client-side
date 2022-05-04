@@ -2,3 +2,8 @@
    display: grid;
    grid-template-columns: repeat(1, 1fr);
 }
+.button-info{
+   width: 25%;
+   margin: 0, auto;
+   
+}

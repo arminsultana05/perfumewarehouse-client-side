@@ -11,6 +11,8 @@ const
         }
         return (
             <div>
+
+                
                 <div className="card flex flex-col justify-between bg-base-100 shadow-xl">
                     <figure className="px-10 w-50 pt-10">
                         <img src={img} alt="Shoes" className="rounded-xl" />
@@ -22,7 +24,7 @@ const
                         <p className=" ml-3">Qty: {qty}</p>
                         <p className=" ml-3">{description}</p>
                         <div className="card-actions ">
-                            <button onClick={() => handleProductDetail(_id)} class="btn btn-secondary bg-pink-500 ml-20 px-10">SHOP NOW</button>
+                            <button onClick={() => handleProductDetail(_id)} class="btn btn-secondary bg-pink-500 ml-20 px-10">STOCK UPDATE</button>
                         </div>
                     </div>
                 </div>

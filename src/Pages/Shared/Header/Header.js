@@ -32,19 +32,33 @@ const Header = () => {
           <div className="nav-links mr-5 mt-2">
             <Link to='/'></Link>
             <Link to='/home'>Home</Link>
-            <Link to='/manage'>Manage Items</Link>
-            <Link to='/additem'>Add Items</Link>
-            <Link to='/myitems'>My Items</Link>
-            {/* <Link to='/additem'>Add Items</Link> */}
-
             <Link to='/blogs'>Blogs</Link>
-            
-           {  user?
+           
+          {
+            user?
+            <Link to='/manage'>Manage Items</Link>:
+            <Link to='/login'></Link>
+          }
+           {
+             user?
+             <Link to='/additem'>Add Items</Link>:
+             <Link to='/login'></Link>
+
+           }
+           {
+             user?
+             <Link to='/myitems'>My Items</Link>:
+             <Link to='/login'></Link>
+           }
+              {  user?
            <button onClick={handleSignOut} className='text-white'>SignOut</button>
            :<Link to='/login'>Login</Link>
              
            }
-            {/* <Link to ='/login'>Login</Link> */}
+
+          
+            
+     
            
             
 

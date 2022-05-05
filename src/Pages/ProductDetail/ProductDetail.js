@@ -24,7 +24,7 @@ const ProductDetail = () => {
 
 
         }
-       
+
 
         axios.post('http://localhost:5000/order', order)
             .then(response => {
@@ -39,14 +39,14 @@ const ProductDetail = () => {
         setProducts({ ...products, qty: products.qty = products.qty - 1 });
     }
 
-    const handleUpdate =id =>{
+    const handleUpdate = id => {
         axios.put(`http://localhost:5000/api/product/stock/${id}`)
-        .then(res=>{
-            setProducts(res)
-            
-        })
+            .then(res => {
+                setProducts(res)
 
-       
+            })
+
+
     }
 
     const navigate = useNavigate()
@@ -92,7 +92,7 @@ const ProductDetail = () => {
                     <input className='border border-pink-600 mt-5 ' placeholder='Update 
                     Quantity' type="number" name="name" id="" />
                     <br />
-                    <input onClick={()=> handleUpdate(products._id)} className='btn btn-sm bg-pink-400 mt-5' type="submit" value="Update User" />
+                    <input onClick={() => handleUpdate(products._id)} className='btn btn-sm bg-pink-400 mt-5' type="submit" value="Update User" />
                 </form>
 
             </div>

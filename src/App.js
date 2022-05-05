@@ -14,6 +14,7 @@ import SignUp from '../src/Pages/SignUp/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import DeletwProduct from './Pages/DeleteProduct/DeletwProduct';
+import Order from './Pages/Order/Order';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/additem" element={<AddProduct></AddProduct>}></Route>
         <Route path="/myitems" element={<MyItems></MyItems>}></Route>
         <Route path="/deleteitem" element={<DeletwProduct></DeletwProduct>}></Route>
+        <Route path='/order/:orderId' element={<Order></Order>}></Route>
         <Route path ='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path='signup'element={<SignUp></SignUp>}></Route>

@@ -15,6 +15,7 @@ import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import DeletwProduct from './Pages/DeleteProduct/DeletwProduct';
 import Order from './Pages/Order/Order';
+import Orders from './Pages/Order/Orders/Orders';
 
 function App() {
 

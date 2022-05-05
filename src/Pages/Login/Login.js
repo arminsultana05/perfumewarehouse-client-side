@@ -8,6 +8,7 @@ import GoogleLogin from './GoogleLogin/GoogleLogin';
 import Loading from '../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
 
 const Login = () => {
 
@@ -21,25 +22,24 @@ const Login = () => {
         auth
       );
       const location = useLocation()
-      let from= location.state?.from?.pathname || "/   ";
+      let from= location.state?.from?.pathname || "/";
     const emailRef = useRef('')
     const passRef = useRef('')
     const navigate = useNavigate()
-    const handleSubmit= event =>{
+    const handleSubmit= async event =>{
         event.preventDefault();
         const email =emailRef.current.value;
         const pass = passRef.current.value;
-        signInWithEmailAndPassword(email,pass);
+        await signInWithEmailAndPassword(email,pass);
+        const {data}= await axios.post('http://localhost:5000/login',{email})
+        localStorage.setItem('accessToken', data.accessToken)
+        navigate(from,{replace:true});
 
     }
     const signUpNavigate= event =>{
         navigate('/signup')
     }
-    useEffect(() => {
-        if (user) {
-            navigate(from);
-        }
-    }, [user]);
+  
     const resetPassword = async()=>{
         const email =emailRef.current.value;
          if(email){

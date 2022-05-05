@@ -25,8 +25,6 @@ const DeletwProduct = () => {
         <div className='w-full sm:w-3/5 mx-auto  mt-10 mb-10'>
 
             {
-               
-
                products.map(product=> <DeleteItems key={product._id}
                product={product}
                handleDelete={handleDelete}

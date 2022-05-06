@@ -6,6 +6,7 @@ import auth from '../../firebase.init'
 import axios from 'axios';
 import './ProductDetail.css'
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const ProductDetail = () => {
     const [user] = useAuthState(auth);
@@ -36,7 +37,12 @@ const ProductDetail = () => {
     }
     const handleDelivered = id => {
         axios.put(`http://localhost:5000/product/update/${id}`)
-        setProducts({ ...products, qty: products.qty = products.qty - 1 });
+      
+        if( products.qty <= 0){
+            toast("Sold Out")
+        }else{
+            setProducts({ ...products, qty: products.qty = products.qty - 1 });
+        }
     }
 
     const handleUpdate = id => {

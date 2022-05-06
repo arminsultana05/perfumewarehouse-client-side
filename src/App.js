@@ -16,6 +16,7 @@ import AddProduct from './Pages/AddProduct/AddProduct';
 import DeletwProduct from './Pages/DeleteProduct/DeletwProduct';
 import Order from './Pages/Order/Order';
 import Orders from './Pages/Order/Orders/Orders';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
     
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
      
     </div>
 

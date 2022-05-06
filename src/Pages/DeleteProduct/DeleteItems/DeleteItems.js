@@ -8,7 +8,7 @@ const DeleteItems = ({product,handleDelete}) => {
                 <table>
                     <thead>
                         <tr>
-                            <th>Sl</th>
+                            <th>ID</th>
                             <th>Image</th>
                             <th>Name</th>
                             <th>Price</th>
@@ -19,7 +19,7 @@ const DeleteItems = ({product,handleDelete}) => {
 
                     <tbody>
                         <tr>
-                            <td>01</td>
+                            <td>{product._id}</td>
                             <td><img src={product.img} alt="" /></td>
                             <td>{product.name}</td>
                             <td>{product.price}</td>

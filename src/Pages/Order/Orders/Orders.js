@@ -1,6 +1,8 @@
 import React from 'react';
+import useProduct from '../../../CustonHooks/useProduct';
 
-const Orders = ({orde}) => {
+const Orders = ({orde,handleRemove}) => {
+   
    
     return (
         <div className='w-4/6 mx-auto mt-5 mb-5'>
@@ -28,7 +30,7 @@ const Orders = ({orde}) => {
                             <td>
                                 <span class="action_btn">
                                     
-                                    <button className="btn btn-secondary bg-pink-500  ">Remove</button>
+                                    <button onClick={()=>handleRemove(orde._id)} className="btn btn-secondary bg-pink-500  ">Remove</button>
                                   
                                 </span>
                             </td>

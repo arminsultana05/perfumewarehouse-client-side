@@ -1,8 +1,10 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 import './AddProduct.css'
 
 const AddProduct = () => {
+    const navigate = useNavigate()
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
@@ -33,7 +35,7 @@ const AddProduct = () => {
            
               <textarea className=' mt-5 border border-gray-600 w-96'  placeholder='description' {...register("description")} />
             
-             <input className='py-2 mt-5 mb-5 border border-gray-300 bg-pink-200 w-96'   type="submit" value="Add Item" />
+             <input  className='py-2 mt-5 mb-5 border border-gray-300 bg-pink-200 w-96'   type="submit" value="Add Item" />
             </form>
 
         </div>

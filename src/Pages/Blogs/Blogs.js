@@ -2,12 +2,12 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className=' w-3/5 mb:w-full mb-10  mt-5'>
+        <div className=' w-3/5 mx-auto mb:w-full mb-10  mt-5'>
             <div className="">
                 <h1 className='text-orange-600 text-3xl'>DIFFERENCE BETWEEN JAVASCRIPT AND NODEJS?</h1>
                 <p className='font-bold text-xl mt-2 mb-2'>JAVASCRIPT:</p>
                 <ul className=''>
-                    <li className='font-bold'>1: Java Script is a client side coding</li>
+                    <li>1: Java Script is a client side coding</li>
                     <li>2: Java Script is a language</li>
                     <li>3:Java script runs inside the browser</li>
                     <li>4: Java script provides behaviour to your pages [HTML,CSS]</li>

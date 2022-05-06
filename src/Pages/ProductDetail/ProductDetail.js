@@ -49,8 +49,9 @@ const ProductDetail = () => {
         event.preventDefault()
         const update = event.target.update.value;
         const qty ={qty:update}
-        console.log(update);
+        setProducts({ ...products, qty: products.qty = products.qty +parseInt( update) });
         axios.put(`http://localhost:5000/api/product/stock/${inventoryId}`,{qty})
+
             
             
 

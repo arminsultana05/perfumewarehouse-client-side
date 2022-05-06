@@ -50,7 +50,12 @@ const ProductDetail = () => {
         const update = event.target.update.value;
         const qty ={qty:update}
         setProducts({ ...products, qty: products.qty = products.qty +parseInt( update) });
-        axios.put(`http://localhost:5000/api/product/stock/${inventoryId}`,{qty})
+        if(update < 0){
+          toast('Update a valid number')
+        }else{
+            axios.put(`http://localhost:5000/api/product/stock/${inventoryId}`,{qty})
+        }
+       
 
             
             

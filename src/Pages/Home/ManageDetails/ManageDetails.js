@@ -21,7 +21,7 @@ const ManageDetails = ({ product }) => {
           <p className=" ml-3">Supplier: {supplier}</p>
           <p className=" ml-3">Price: ${price}</p>
           <p className=" ml-3">Qty: {qty}</p>
-          <p className=" ml-3">{description}</p>
+          <p className=" ml-3">Discription: {description}</p>
           <div className="card-actions  ">
             <button onClick={()=>handleManageDetail(_id)} className="btn btn-secondary bg-pink-500 ml-20 px-10 ">STOCK UPDATE</button>
             

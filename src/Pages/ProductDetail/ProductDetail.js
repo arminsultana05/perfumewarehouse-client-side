@@ -45,12 +45,14 @@ const ProductDetail = () => {
         }
     }
 
-    const handleUpdate = id => {
-        axios.put(`http://localhost:5000/api/product/stock/${id}`)
-            .then(res => {
-                setProducts(res)
-
-            })
+    const handleUpdate = (event) => {
+        event.preventDefault()
+        const update = event.target.update.value;
+        const qty ={qty:update}
+        console.log(update);
+        axios.put(`http://localhost:5000/api/product/stock/${inventoryId}`,{qty})
+            
+            
 
 
     }
@@ -94,11 +96,11 @@ const ProductDetail = () => {
 
             <div className=" text-center ">
                 <h1 className='mt-5 ml-4 font-semibold'>RESTOCK THE ITEM</h1>
-                <form  >
+                <form onSubmit={handleUpdate} >
                     <input className='border border-pink-600 mt-5 ' placeholder='Update 
-                    Quantity' type="number" name="name" id="" />
+                    Quantity' type="number" name="update" id="" />
                     <br />
-                    <input onClick={() => handleUpdate(products._id)} className='btn btn-sm bg-pink-400 mt-5' type="submit" value="Update User" />
+                    <input  className='btn btn-sm bg-pink-400 mt-5' type="submit"  value="Update User" />
                 </form>
 
             </div>

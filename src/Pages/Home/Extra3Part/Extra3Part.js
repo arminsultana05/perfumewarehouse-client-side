@@ -1,8 +1,9 @@
 import React from 'react';
+import './Extra3Part.css'
 
 const Extra3Part = () => {
     return (
-        <div className='mt-24 mb-10 w-1/2 mx-auto'>
+        <div className='mb-10 responsive'>
             <div className="stats shadow">
 
                 <div className="stat">

@@ -39,7 +39,7 @@ const ProductDetail = () => {
         axios.put(`http://localhost:5000/product/update/${id}`)
       
         if( products.qty <= 0){
-            toast("Sold Out")
+            toast.success("Sold Out")
         }else{
             setProducts({ ...products, qty: products.qty = products.qty - 1 });
         }
@@ -51,7 +51,7 @@ const ProductDetail = () => {
         const qty ={qty:update}
         setProducts({ ...products, qty: products.qty = products.qty +parseInt( update) });
         if(update < 0){
-          toast('Update a valid number')
+          toast.success('Update a valid number')
         }else{
             axios.put(`http://localhost:5000/api/product/stock/${inventoryId}`,{qty})
         }

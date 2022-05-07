@@ -1,8 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import useProduct from '../../CustonHooks/useProduct';
-import useProductIdDetail from '../../CustonHooks/useProductId';
 import auth from '../../firebase.init';
 import Orders from '../Order/Orders/Orders'
 

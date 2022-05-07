@@ -8,7 +8,7 @@ const DeletwProduct = () => {
     const handleDelete = id => {
         const procced = window.confirm("Are You Sure?");
         if (procced) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://fierce-fortress-12613.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -22,19 +22,21 @@ const DeletwProduct = () => {
         }
     }
     return (
-        <div className='m-5 mt-10 mb-10'>
+        <div className="table_responsive">
+            <div className='m-5 mt-10 mb-10 '>
 
-            {
-               products.map(product=> <DeleteItems key={product._id}
-               product={product}
-               handleDelete={handleDelete}
-               >
+                {
+                    products.map(product => <DeleteItems key={product._id}
+                        product={product}
+                        handleDelete={handleDelete}
+                    >
 
-               </DeleteItems>)
-                    
-             
+                    </DeleteItems>)
+
+
                 }
 
+            </div>
         </div>
     );
 };

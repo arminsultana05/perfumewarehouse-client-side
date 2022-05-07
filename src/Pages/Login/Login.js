@@ -32,7 +32,7 @@ const Login = () => {
         const email =emailRef.current.value;
         const pass = passRef.current.value;
         await signInWithEmailAndPassword(email,pass);
-        const {data}= await axios.post('http://localhost:5000/login',{email})
+        const {data}= await axios.post('https://fierce-fortress-12613.herokuapp.com/login',{email})
         localStorage.setItem('accessToken', data.accessToken)
         navigate(from,{replace:true});
 

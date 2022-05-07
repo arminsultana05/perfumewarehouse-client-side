@@ -40,7 +40,7 @@ const Header = () => {
                   <Link to='/myitems'>My Items</Link></>
            
           }
-           {  user?
+           {  user?.uid?
            <button onClick={handleSignOut} className='text-white'>SignOut</button>
            :<Link to='/login'>Login</Link>
              

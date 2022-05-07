@@ -11,7 +11,7 @@ const MyItems = () => {
     useEffect(()=>{
         const getOrder = async()=>{
             const email=user.email
-            const url =`http://localhost:5000/order?email=${email}` ;
+            const url =`https://fierce-fortress-12613.herokuapp.com/order?email=${email}` ;
            const {data} = await axios.get(url ,{
             headers:{
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -27,7 +27,7 @@ const MyItems = () => {
     const handleRemove = id => {
         const procce = window.confirm("Are You Sure?");
         if (procce) {
-            const url = `http://localhost:5000/order/${id}`;
+            const url = `https://fierce-fortress-12613.herokuapp.com/order/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

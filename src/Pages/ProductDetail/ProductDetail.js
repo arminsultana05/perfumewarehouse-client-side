@@ -25,13 +25,13 @@ const ProductDetail = () => {
             address: event.target.address.value,
             phone: event.target.phone.value
         }
-            axios.post('http://localhost:5000/order', order)
+            axios.post('https://fierce-fortress-12613.herokuapp.com/order', order)
             .then(response => {
                 console.log(response);
             })
  }
     const handleDelivered = id => {
-        axios.put(`http://localhost:5000/product/update/${id}`)
+        axios.put(`https://fierce-fortress-12613.herokuapp.com/product/update/${id}`)
       
         if( products.qty <= 0){
             toast.success("Sold Out")
@@ -48,7 +48,7 @@ const ProductDetail = () => {
         if(update < 0){
           toast.success('Update a valid number')
         }else{
-            axios.put(`http://localhost:5000/api/product/stock/${inventoryId}`,{qty})
+            axios.put(`https://fierce-fortress-12613.herokuapp.com/api/product/stock/${inventoryId}`,{qty})
         }
        }
 

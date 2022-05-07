@@ -3,7 +3,7 @@ import './Deleteitem.css'
 
 const DeleteItems = ({product,handleDelete}) => {
     return (
-        <div>
+        <div className=''>
             <div class="table_responsive">
                 <table>
                     <thead>

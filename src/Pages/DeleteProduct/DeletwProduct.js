@@ -22,7 +22,7 @@ const DeletwProduct = () => {
         }
     }
     return (
-        <div className='w-full sm:w-3/5 mx-auto  mt-10 mb-10'>
+        <div className='m-5 mt-10 mb-10'>
 
             {
                products.map(product=> <DeleteItems key={product._id}

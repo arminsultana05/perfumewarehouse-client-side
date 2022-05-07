@@ -44,7 +44,7 @@ const MyItems = () => {
 
     return (
         <div>
-            <h1>My items:{order.length}</h1>
+            <h1 className='text-3xl text-center font-bold mt-10 mb-10 text-red-500'>MY TOTAL PRODUCTS : {order.length}</h1>
            {
                order.map(orde=> <Orders key={orde._id}
                orde={orde}

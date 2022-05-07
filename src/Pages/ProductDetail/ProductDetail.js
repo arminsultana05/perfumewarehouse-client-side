@@ -17,7 +17,9 @@ const ProductDetail = () => {
     const handlePlaceOrder = event => {
         event.preventDefault()
         const order = {
+            photo:products.qty,
             product: products.name,
+            price: products.price,
             inventory: inventoryId,
             email: user.email,
             address: event.target.address.value,
@@ -51,8 +53,9 @@ const ProductDetail = () => {
        }
 
     const navigate = useNavigate()
+   
     return (
-        <div className=''>
+        <div className='m-5'>
 
             <div className="table_responsive">
                 <table>
@@ -98,10 +101,15 @@ const ProductDetail = () => {
 
             </div>
             <div className="text-center mt-5">
-                <h1 className='mb-2 text-2xl font-semibold'>Order Your Product</h1>
+                <h1 className='mb-2 text-2xl font-semibold'>Order Your Items</h1>
                 <form onSubmit={handlePlaceOrder} >
                     <input className=' w-1/3 border  border-pink-600 mt-3 p-1' type="text" value={products?.name} name="name" placeholder='Product-Name' id="" readOnly />
                     <br />
+                    <input className=' w-1/3 border  border-pink-600 mt-3 p-1' type="number" value={products?.price} name="price" placeholder='Product-price' id="" readOnly />
+                    <br />
+                    <input className=' w-1/3 border  border-pink-600 mt-3 p-1' type="number" value={products?.qty} name="price" placeholder='Product-qty' id="" readOnly />
+                    <br />
+                   
                     <input className='w-1/3 border border-pink-600 p-1 mt-3' type="text" name="name" value={user?.displayName} placeholder='name' id="" readOnly />
                     <br />
                     <input className='w-1/3 border border-pink-600 p-1 mt-3' type="email" name="email" value={user?.email} placeholder='email' id="" readOnly disabled />
@@ -110,7 +118,7 @@ const ProductDetail = () => {
                     <br />
                     <input className='w-1/3 border border-pink-600 p-1 mt-3' type="text" name="phone" placeholder='phone' id="" />
                     <br />
-                    <input className='bg-pink-300 w-1/3 mt-2 p-2' type="submit" value="Place Order" />
+                    <input  className='bg-pink-300 w-1/3 mt-2 p-2' type="submit" value="Place Order Your Item page" />
 
                 </form>
             </div>

@@ -1,18 +1,19 @@
 import React from 'react';
-import useProduct from '../../../CustonHooks/useProduct';
+
 
 const Orders = ({orde,handleRemove}) => {
    
    
     return (
-        <div className='w-4/6 mx-auto mt-5 mb-5'>
+        <div className='m-5'>
            
             <div class="table_responsive">
                 <table>
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>Order Qty</th>
                             <th>Product</th>
+                            <th>Price</th>
                             <th>Email</th>
                             <th>Address</th>
                             <th>phone</th>
@@ -22,8 +23,9 @@ const Orders = ({orde,handleRemove}) => {
 
                     <tbody>
                         <tr>
-                            <td>{orde._id}</td>
+                            <td>{orde.photo}</td>
                             <td>{orde.product}</td>
+                            <td>$ {orde.price}</td>
                             <td>{orde.email}</td>
                             <td>{orde.address}</td>
                             <td>{orde.phone}</td>

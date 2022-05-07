@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 
 const ProductDetail = () => {
     const [user] = useAuthState(auth);
-    const { inventoryId } = useParams()
+    const {inventoryId} = useParams()
     const [products, setProducts] = useProductIdDetail(inventoryId)
     console.log(products);
     // <.....Plac Order section.....>
@@ -22,19 +22,12 @@ const ProductDetail = () => {
             email: user.email,
             address: event.target.address.value,
             phone: event.target.phone.value
-
-
         }
-
-
-        axios.post('http://localhost:5000/order', order)
+            axios.post('http://localhost:5000/order', order)
             .then(response => {
                 console.log(response);
             })
-
-
-
-    }
+ }
     const handleDelivered = id => {
         axios.put(`http://localhost:5000/product/update/${id}`)
       
@@ -55,13 +48,7 @@ const ProductDetail = () => {
         }else{
             axios.put(`http://localhost:5000/api/product/stock/${inventoryId}`,{qty})
         }
-       
-
-            
-            
-
-
-    }
+       }
 
     const navigate = useNavigate()
     return (

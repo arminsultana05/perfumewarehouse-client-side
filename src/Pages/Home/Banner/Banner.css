@@ -10,3 +10,19 @@
     margin-top: 120px;
     margin-left: 100px;
 }
+@media only screen and (max-width:576px) {
+    .banner{
+       
+        background: url(../../../images/banner1.png.jpg);
+        height: 500px;
+        background-size: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+       
+        font-size: 16px;
+    }
+    .margin{
+        margin-top: 100px;
+        margin-left: 60px;
+    }
+}

@@ -35,34 +35,17 @@ const Header = () => {
             <Link to='/blogs'>Blogs</Link>
            
           {
-            user?
-            <Link to='/manage'>Manage Items</Link>:
-            <Link to='/login'></Link>
+            user && <> <Link to='/manage'>Manage Items</Link>
+                  <Link to='/additem'>Add Items</Link>
+                  <Link to='/myitems'>My Items</Link></>
+           
           }
-           {
-             user?
-             <Link to='/additem'>Add Items</Link>:
-             <Link to='/login'></Link>
-
-           }
-           {
-             user?
-             <Link to='/myitems'>My Items</Link>:
-             <Link to='/login'></Link>
-           }
-              {  user?
+           {  user?
            <button onClick={handleSignOut} className='text-white'>SignOut</button>
            :<Link to='/login'>Login</Link>
              
            }
-
-          
-            
-     
-           
-            
-
-          </div>
+     </div>
         </div>
       </div>
     </div>

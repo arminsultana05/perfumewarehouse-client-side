@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Login.css'
 import logo from '../../images/user2.png'
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 
 const Login = () => {
+  
 
     const [
         signInWithEmailAndPassword,
@@ -38,6 +39,10 @@ const Login = () => {
     }
     const signUpNavigate= event =>{
         navigate('/signup')
+    }
+    if(error){
+       alert('Please Enter Valid Email and Password')
+
     }
   
     const resetPassword = async()=>{
@@ -70,6 +75,8 @@ const Login = () => {
             <br />
             <small className='text-white ml-3 text-base cursor-pointer mt-5 '>Forget Password? <span onClick={resetPassword} className='text-yellow-500 '>Reset </span></small> 
         </form>
+        
+       
         <small className='text-white ml-3 text-base cursor-pointer '>New to ware house? <span onClick={signUpNavigate} className='text-yellow-500 '>Sign Up</span></small> 
         <GoogleLogin></GoogleLogin>
         <ToastContainer />

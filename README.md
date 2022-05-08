@@ -1,6 +1,6 @@
 # PERFUME WARE HOUSE WEBSITE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Perfume ware-house live website link [live website link](https://perfume-ware-house-assignment.web.app/home).
 
 ## FEATURES OF THE PROJECT
 * Used Google and email authentication.

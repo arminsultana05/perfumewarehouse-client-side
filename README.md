@@ -1,10 +1,43 @@
-# Getting Started with Create React App
+# PERFUME WARE HOUSE WEBSITE
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## FEATURES OF THE PROJECT
+* Used Google and email authentication.
+* The user send reset password verification.
+* Clicking on Inventory item any button on the homepage will take you to the privet route page.
+*  You have Reduce and Increase  Your Product Qantity and order the product.
+* And you will see your ordered product on My Item page
+* And used .env file with gitignore
+* Used data Mongodb Database
 
-In the project directory, you can run:
+## Technologies:
+* Used React Router.
+* React Library.
+* Tailwind Css.
+* Firebase Authentication.
+* React Firebase Hook Library.
+* React Toastyfy
+* React Form
+
+## BackEnd Technology:
+* Used Heroku.com
+* Used .env file for Token acces and userId and password.
+* Mongodb Atlast.
+
+## Pages:
+* Home Page.
+* Manage Items page.
+* Add Items page.
+* My Items page.
+* Blogs page .
+* Login page.
+* SignIn page.
+* 404 page.
+
+# Description Of this Project
+* The specialty of this website, This website has Home Page (Navbar, Banner , 6th Inventory Items,Footer And Exta Two Section and login Sign Authentication).
+* If the user clicks on the button of any inventory item And the user will go on a private route. And if the user wants, he can reduce or increase the quantity of the product there,And the user can order the product according to that quantity.And the user will be able to see his ordered product in My Item.And if the user wants to see more products he can go to the Manage Inventory page where more than six details can be found.
 
 ### `npm start`
 

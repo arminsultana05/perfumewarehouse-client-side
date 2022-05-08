@@ -53,7 +53,6 @@ const ProductDetail = () => {
     const navigate = useNavigate()
     return (
         <div className='m-5'>
-
             <div className="table_responsive">
                 <table>
                     <thead>

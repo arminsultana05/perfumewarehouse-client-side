@@ -18,7 +18,6 @@ const DeletwProduct = () => {
                     const remaining = products.filter(product => product._id !== id);
                     setProducts(remaining)
                 })
-
         }
     }
     return (
@@ -28,14 +27,9 @@ const DeletwProduct = () => {
                 {
                     products.map(product => <DeleteItems key={product._id}
                         product={product}
-                        handleDelete={handleDelete}
-                    >
-
+                        handleDelete={handleDelete}>
                     </DeleteItems>)
-
-
                 }
-
             </div>
         </div>
     );

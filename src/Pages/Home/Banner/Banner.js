@@ -8,13 +8,9 @@ const Banner = () => {
                 <p className='text-3xl md:text-5xl' >LIFE IS A JOURNEY - </p>
                 <p className='text-3xl md:text-5xl mt-3'>CAR PERFUME</p>
                 <p className='ml-2 mt-3'>EXPLORE OUR WARE HOUSE</p>
-                 <button class="btn btn-secondary bg-pink-500 px-8 mt-5 ml-2">SHOPE NOW</button>
+                <button class="btn btn-secondary bg-pink-500 px-8 mt-5 ml-2">SHOPE NOW</button>
             </div>
-
-            
         </div>
-
-
     );
 };
 

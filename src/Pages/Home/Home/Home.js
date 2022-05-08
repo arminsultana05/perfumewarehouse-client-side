@@ -14,8 +14,6 @@ const Home = () => {
             <ExtraSession></ExtraSession>
             <Extra2Session></Extra2Session>
             <Extra3Part></Extra3Part>
-           
-            
         </div>
     );
 };

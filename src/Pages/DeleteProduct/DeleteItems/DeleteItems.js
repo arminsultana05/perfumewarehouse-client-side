@@ -1,7 +1,7 @@
 import React from 'react';
 import './Deleteitem.css'
 
-const DeleteItems = ({product,handleDelete}) => {
+const DeleteItems = ({ product, handleDelete }) => {
     return (
         <div className=''>
             <div class="table_responsive">
@@ -16,7 +16,6 @@ const DeleteItems = ({product,handleDelete}) => {
                             <th>Action</th>
                         </tr>
                     </thead>
-
                     <tbody>
                         <tr>
                             <td>{product._id}</td>
@@ -26,15 +25,11 @@ const DeleteItems = ({product,handleDelete}) => {
                             <td>{product.qty}</td>
                             <td>
                                 <span class="action_btn">
-                                    
-                                    <button onClick={()=>handleDelete(product._id)} className="btn btn-secondary bg-pink-500  ">Remove</button>
-                                  
+                                    <button onClick={() => handleDelete(product._id)} className="btn btn-secondary bg-pink-500  ">Remove</button>
+
                                 </span>
                             </td>
                         </tr>
-
-                       
-
                     </tbody>
                 </table>
             </div>

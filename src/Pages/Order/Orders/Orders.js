@@ -1,13 +1,12 @@
 import React from 'react';
+import './Orders.css'
 
 
-const Orders = ({orde,handleRemove}) => {
-   
-   
+const Orders = ({ orde, handleRemove }) => {
     return (
-        <div className='m-5'>
-           
-            <div class="table_responsive">
+        <div className='m-5 '>
+
+            <div className="table_responsive">
                 <table>
                     <thead>
                         <tr>
@@ -20,7 +19,6 @@ const Orders = ({orde,handleRemove}) => {
                             <th>Action</th>
                         </tr>
                     </thead>
-
                     <tbody>
                         <tr>
                             <td>{orde.photo}</td>
@@ -31,19 +29,13 @@ const Orders = ({orde,handleRemove}) => {
                             <td>{orde.phone}</td>
                             <td>
                                 <span class="action_btn">
-                                    
-                                    <button onClick={()=>handleRemove(orde._id)} className="btn btn-secondary bg-pink-500  ">Remove</button>
-                                  
+                                    <button onClick={() => handleRemove(orde._id)} className="btn btn-secondary bg-pink-500  ">Remove</button>
                                 </span>
                             </td>
                         </tr>
-
-                       
-
                     </tbody>
                 </table>
             </div>
-            
         </div>
     );
 };

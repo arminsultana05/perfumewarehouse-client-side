@@ -16,7 +16,6 @@ const Extra2Session = () => {
             <div>
                 <img src={logo2} alt="" />
             </div>
-
         </div>
     );
 };

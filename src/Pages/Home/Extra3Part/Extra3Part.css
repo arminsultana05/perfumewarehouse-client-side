@@ -4,15 +4,12 @@
    }
 @media only screen and (max-width:576px) {
     .responsive{
-        width:50%;
-       display: flex;
+        display: none;
     }
-    
 }
 @media only screen and (min-width:577px) and (max-width:992px) {
     .responsive{
         width:400px;
-        margin-left: 70px;
+        margin-left: 15px;
         }
-    
-}
+    }

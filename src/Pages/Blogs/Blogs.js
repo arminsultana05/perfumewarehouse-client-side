@@ -48,25 +48,17 @@ const Blogs = () => {
                 <p>JWT, or JSON Web Token, is an open standard used to share security information between two parties — a client and a server. Each JWT contains encoded JSON objects, including a set of claims. JWTs are signed using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued.</p>
                 <p className='font-bold text-xl mt-2 mb-2'>How JWT Works:</p>
                 <p>A JWT is a string made up of three parts, separated by dots (.), and serialized using base64. In the most common serialization format, compact serialization, the JWT looks something like this: xxxxx.yyyyy.zzzzz.
-
                     Once decoded, you will get two JSON strings:
                     <br />
-
                     The header and the payload.
                     The signature.
                     The JOSE (JSON Object Signing and Encryption) header contains the type of token — JWT in this case — and the signing algorithm.
                     <br />
-
                     The payload contains the claims. This is displayed as a JSON string, usually containing no more than a dozen fields to keep the JWT compact. This information is typically used by the server to verify that the user has permission to perform the action they are requesting.
                     <br />
-
                     There are no mandatory claims for a JWT, but overlaying standards may make claims mandatory. For example, when using JWT as bearer access token under OAuth2.0, iss, sub, aud, and exp must be present. some are more common than others.
-                   
-
-                     </p>
+                </p>
             </div>
-
-
         </div>
     );
 };

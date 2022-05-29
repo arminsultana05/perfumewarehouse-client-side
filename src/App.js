@@ -17,6 +17,7 @@ import DeletwProduct from './Pages/DeleteProduct/DeletwProduct';
 import Order from './Pages/Order/Order';
 import Orders from './Pages/Order/Orders/Orders';
 import { ToastContainer } from 'react-toastify';
+import About from './Pages/About/About';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/additem" element={<AddProduct></AddProduct>}></Route>
         <Route path="/myitems" element={<MyItems></MyItems>}></Route>
         <Route path="/deleteitem" element={<DeletwProduct></DeletwProduct>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='/order/:orderId' element={<Order></Order>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>

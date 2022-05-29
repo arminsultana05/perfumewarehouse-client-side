@@ -4,9 +4,15 @@ import Banner from '../Banner/Banner'
 import ExtraSession from '../ExtraSession/ExtraSession';
 import Extra2Session from '../Extra2Session/Extra2Session';
 import Extra3Part from '../Extra3Part/Extra3Part';
+import { useAuthState } from 'react-firebase-hooks/auth';
+
+
+
 
 
 const Home = () => {
+   
+    
     return (
         <div>
             <Banner></Banner>

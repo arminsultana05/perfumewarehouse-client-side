@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useProduct from '../../../CustonHooks/useProduct';
+import Loading from '../../Shared/Loading/Loading';
 import Product from '../Product/Product';
 import './InventoryItem.css'
+
+
 
 const InventoryItem = () => {
     const [products, setProducts] = useProduct([])
     const navigate = useNavigate()
+   
 
     return (
         <div>

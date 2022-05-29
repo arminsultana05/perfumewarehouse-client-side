@@ -1,0 +1,14 @@
+.About-me{
+    height: 500px;
+   text-align: center;
+   margin-top: 50px;
+   margin: 60px auto;
+  
+}
+.About-me span{
+    color: rgb(241, 193, 102);
+}  
+.About-me p{
+ margin-top: 10px;
+    
+}

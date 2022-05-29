@@ -45,7 +45,7 @@ const ProductDetail = () => {
         const qty = { qty: update }
         setProducts({ ...products, qty: products.qty = products.qty + parseInt(update) });
         if (update < 0) {
-            toast.success('Update a valid number')
+            return alert("fgsgsgfsgsgsg")
         } else {
             axios.put(`https://fierce-fortress-12613.herokuapp.com/api/product/stock/${inventoryId}`, { qty })
         }

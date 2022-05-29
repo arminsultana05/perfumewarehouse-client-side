@@ -11,7 +11,7 @@ const Header = () => {
     signOut(auth)
   }
   return (
-    <header className=''>
+    <header className='headers'>
       <div className=" ">
         <div className="">
           <div className="nav bg-pink-500">
@@ -32,10 +32,14 @@ const Header = () => {
               <Link to='/'></Link>
               <Link to='/home'>Home</Link>
               <Link to='/blogs'>Blogs</Link>
+             
+             
               {
                 user && <> <Link to='/manage'>Manage Items</Link>
                   <Link to='/additem'>Add Items</Link>
-                  <Link to='/myitems'>My Items</Link></>
+                  <Link to="/myitems">My Items</Link>
+                  <Link to='/about'>About Me</Link>
+                  </>
                   
               }
               {user?.uid ?

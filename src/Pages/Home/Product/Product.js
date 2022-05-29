@@ -1,13 +1,18 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../../Shared/Loading/Loading';
 
 const
     Product = ({ product }) => {
         const { _id, name, img, price, qty, description, supplier } = product;
+       
         const navigate = useNavigate()
         const handleProductDetail = id => {
             navigate(`/inventory/${id}`)
 
+        }
+        if(!product){
+            return <Loading></Loading>
         }
         return (
             <div>
